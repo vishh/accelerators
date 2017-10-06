@@ -25,7 +25,7 @@ spec:
         hostPath:
           path: /proc/sysrq-trigger
       containers:
-      - image: gcr.io/google_containers/cos-nvidia-driver-install@sha256:456f272257d4557518afcaa7b0a1bba22d6861b20061ed5a1bd3f38aa7f8fb1a
+      - image: gcr.io/vishnuk-cloud/cos-nvidia-driver-install@sha256:4af21c51d74e3cf1977b3909e2a194ebe7b03d63218a4b8a628033ad7767e121
         command: ["/bin/sh", "-c"]
         args: ["usr/bin/nvidia-installer.sh && sleep infinity"]
         name: nvidia-driver-installer
